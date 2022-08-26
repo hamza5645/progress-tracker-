@@ -16,7 +16,7 @@ struct Home_Screen: View {
                 
             }
             .navigationTitle("Lists")
-//            .navigationTitle("git")
+
         }
     }
 }
