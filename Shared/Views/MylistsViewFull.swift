@@ -14,9 +14,13 @@ struct MylistsViewFull: View {
     
     init(vm:HomeViewModel) {
         _vm = StateObject(wrappedValue: vm)
+//        myLists = []
     }
-    let myLists: [MyListViewModel]
+    let myLists: [MyListViewModel] = []
     
+       
+    
+    var body: some View {
         if myLists.isEmpty {
             NavigationView {
                 VStack {
@@ -80,9 +84,6 @@ struct MylistsViewFull: View {
             }
             .navigationTitle("Progress Tracker")
             }
-    
-    var body: some View {
-        Text("Hello")
     }
 }
 
