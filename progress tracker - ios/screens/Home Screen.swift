@@ -11,7 +11,7 @@ struct Home_Screen: View {
     var body: some View {
         NavigationView {
             VStack {
-                listsView(vm: HomeViewModel())
+                MylistsViewFull(vm: HomeViewModel())
                 
                 
             }

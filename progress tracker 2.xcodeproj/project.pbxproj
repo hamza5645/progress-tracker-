@@ -36,9 +36,6 @@
 		2FD9008B2885523100242D96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD9008A2885523100242D96 /* Preview Assets.xcassets */; };
 		2FD90093288552DF00242D96 /* Home Screen - mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD90092288552DF00242D96 /* Home Screen - mac.swift */; };
 		2FD900962885533700242D96 /* Home Screen - watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD900952885533700242D96 /* Home Screen - watch.swift */; };
-		2FD900992885578000242D96 /* MylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD900982885578000242D96 /* MylistsView.swift */; };
-		2FD9009A2885578000242D96 /* MylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD900982885578000242D96 /* MylistsView.swift */; };
-		2FD9009B2885578000242D96 /* MylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD900982885578000242D96 /* MylistsView.swift */; };
 		2FD9009D2885593A00242D96 /* sideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9009C2885593A00242D96 /* sideBar.swift */; };
 		2FD92BEC2885607B008DCEF1 /* addNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD92BEB2885607B008DCEF1 /* addNewListView.swift */; };
 		2FD92BED2885607B008DCEF1 /* addNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD92BEB2885607B008DCEF1 /* addNewListView.swift */; };
@@ -76,7 +73,6 @@
 		2FD9008A2885523100242D96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FD90092288552DF00242D96 /* Home Screen - mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Home Screen - mac.swift"; path = "progress tracker - ios/screens/Home Screen - mac.swift"; sourceTree = SOURCE_ROOT; };
 		2FD900952885533700242D96 /* Home Screen - watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Home Screen - watch.swift"; path = "progress tracker - ios/screens/Home Screen - watch.swift"; sourceTree = SOURCE_ROOT; };
-		2FD900982885578000242D96 /* MylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MylistsView.swift; sourceTree = "<group>"; };
 		2FD9009C2885593A00242D96 /* sideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBar.swift; sourceTree = "<group>"; };
 		2FD92BEB2885607B008DCEF1 /* addNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewListView.swift; sourceTree = "<group>"; };
 		2FD92BEF2885ECF6008DCEF1 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
@@ -239,7 +235,6 @@
 		2FD900972885574100242D96 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2FD900982885578000242D96 /* MylistsView.swift */,
 				2FA7869328AF7EA5009407DE /* MylistsViewFull.swift */,
 				2FD92BEB2885607B008DCEF1 /* addNewListView.swift */,
 				2FD92BF32885F070008DCEF1 /* colorPickerView.swift */,
@@ -413,7 +408,6 @@
 				2FB5D353289AFAD40002E58D /* coreDataManager.swift in Sources */,
 				2FA7869428AF7EA5009407DE /* MylistsViewFull.swift in Sources */,
 				2FD900692885511500242D96 /* Home Screen.swift in Sources */,
-				2FD900992885578000242D96 /* MylistsView.swift in Sources */,
 				2FB5D357289AFEE00002E58D /* MyLists+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +427,6 @@
 				2FD9009D2885593A00242D96 /* sideBar.swift in Sources */,
 				2FB5D354289AFAD40002E58D /* coreDataManager.swift in Sources */,
 				2FB4FF77289C428300B7DB6D /* MyListViewModel.swift in Sources */,
-				2FD9009A2885578000242D96 /* MylistsView.swift in Sources */,
 				2F0C64EC2892FD0000611760 /* Color+Extension.swift in Sources */,
 				2FE04A0928995DC80042E0B5 /* homeViewModel.swift in Sources */,
 			);
@@ -452,7 +445,6 @@
 				2FB5D35C289B00310002E58D /* progress tracker model.xcdatamodeld in Sources */,
 				2FA7869628AF7EA5009407DE /* MylistsViewFull.swift in Sources */,
 				2FE04A0A28995E920042E0B5 /* homeViewModel.swift in Sources */,
-				2FD9009B2885578000242D96 /* MylistsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
