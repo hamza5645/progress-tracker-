@@ -72,7 +72,6 @@ struct addNewListView: View {
                 #endif
                 
                     .focused($amountIsFocused)
-//                    .font(.system(size: 15))
                 Spacer()
                 Spacer()
                 
@@ -80,15 +79,15 @@ struct addNewListView: View {
             }
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .toolbar {
-                ToolbarItemGroup(placement: .keyboard) {
-                    Spacer()
-                    
-                Button("Done") {
-                    amountIsFocused = false
-                    }
-                }
-            }
+//            .toolbar {
+//                ToolbarItemGroup(placement: .keyboard) {
+//                    Spacer()
+//                    
+////                Button("Done") {
+////                    amountIsFocused = false
+////                    }
+//                }
+//            }
         }
     }
 

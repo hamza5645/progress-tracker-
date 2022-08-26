@@ -12,8 +12,6 @@ struct Home_Screen: View {
         NavigationView {
             VStack {
                 MylistsViewFull(vm: HomeViewModel())
-                
-                
             }
             .navigationTitle("Lists")
         }

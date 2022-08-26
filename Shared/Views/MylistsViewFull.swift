@@ -14,41 +14,14 @@ struct MylistsViewFull: View {
     
     init(vm:HomeViewModel) {
         _vm = StateObject(wrappedValue: vm)
-//        myLists = []
+        //        myLists = []
     }
     let myLists: [MyListViewModel] = []
     
-       
+    
     
     var body: some View {
         if myLists.isEmpty {
-            NavigationView {
-                VStack {
-                    
-                    List(myLists) { myLists in
-                        Text(myLists.name)
-                    }
-    #if os(iOS)
-                    Divider()
-                    Button("Add List") {
-                        
-                    }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding()
-    #endif
-                    
-    #if os(macOS)
-                    Divider()
-                    Button("Add List") {
-                        
-                    }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding()
-    #endif
-                }
-            }
-            .navigationTitle("Progress Tracker")
-        } else {
             NavigationView {
                 VStack {
                     Button {
@@ -63,27 +36,54 @@ struct MylistsViewFull: View {
                         .foregroundColor(.primary)
                     }
                     .buttonStyle(.plain)
-    #if os(iOS)
+#if os(iOS)
                     .sheet(isPresented: $isPresented) {
                         addNewListView { newListName, colorCode in
                             //Save
                             vm.saveNewList(newListName: newListName, colorCode: colorCode)
                         }
                     }
-    #endif
+#endif
                     
-    #if os(macOS)
+#if os(macOS)
                     .sheet(isPresented: $isPresented) {
                         addNewListView { newListName, colorCode in
                             //Save
                         }
                     }
-    #endif
+#endif
                 }
                 //        .frame(minWidth: 800, maxWidth: .infinity, minHeight: 1000,maxHeight: .infinity, alignment: .center)
             }
             .navigationTitle("Progress Tracker")
+        } else {
+            NavigationView {
+                VStack {
+                    
+                    List(myLists) { myLists in
+                        Text(myLists.name)
+                    }
+#if os(iOS)
+                    Divider()
+                    Button("Add List") {
+                        
+                    }
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding()
+#endif
+                    
+#if os(macOS)
+                    Divider()
+                    Button("Add List") {
+                        
+                    }
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding()
+#endif
+                }
             }
+            .navigationTitle("Progress Tracker")
+        }
     }
 }
 
