@@ -16,7 +16,6 @@ struct Home_Screen: View {
                 
             }
             .navigationTitle("Lists")
-//test2
         }
     }
 }
