@@ -10,7 +10,7 @@ import SwiftUI
 struct sideBar: View {
     var body: some View {
         VStack {
-           listsView(vm: HomeViewModel())
+           MylistsViewFull(vm: HomeViewModel())
         }
 //        .frame(width: 20)
     }

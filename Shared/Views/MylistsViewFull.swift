@@ -49,6 +49,7 @@ struct MylistsViewFull: View {
                     .sheet(isPresented: $isPresented) {
                         addNewListView { newListName, colorCode in
                             //Save
+                            vm.saveNewList(newListName: newListName, colorCode: colorCode)
                         }
                     }
 #endif
@@ -66,19 +67,32 @@ struct MylistsViewFull: View {
 #if os(iOS)
                     Divider()
                     Button("Add List") {
+                        isPresented = true
                         
                     }
                     .frame(maxWidth: .infinity, alignment: .trailing)
                     .padding()
+                    .sheet(isPresented: $isPresented) {
+                        addNewListView { newListName, colorCode in
+                            //Save
+                            vm.saveNewList(newListName: newListName, colorCode: colorCode)
+                        }
+                    }
 #endif
                     
 #if os(macOS)
                     Divider()
                     Button("Add List") {
-                        
+                        isPresented = true
                     }
                     .frame(maxWidth: .infinity, alignment: .trailing)
                     .padding()
+                    .sheet(isPresented: $isPresented) {
+                        addNewListView { newListName, colorCode in
+                            //Save
+                            vm.saveNewList(newListName: newListName, colorCode: colorCode)
+                        }
+                    }
 #endif
                 }
             }

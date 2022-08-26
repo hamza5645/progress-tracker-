@@ -6,7 +6,7 @@ import SwiftUI
 struct progress_tracker___iosApp: App {
     var body: some Scene {
         WindowGroup {
-            Home_Screen()
+            Home_Screen(vm: HomeViewModel())
         }
     }
 }

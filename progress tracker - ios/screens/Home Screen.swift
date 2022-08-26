@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct Home_Screen: View {
+    
+    @StateObject private var vm:HomeViewModel
+    
+    init(vm:HomeViewModel) {
+        _vm = StateObject(wrappedValue: vm)
+        //        myLists = []
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -20,6 +28,7 @@ struct Home_Screen: View {
 
 struct Home_Screen_Previews: PreviewProvider {
     static var previews: some View {
-        Home_Screen()
+        let vm = HomeViewModel()
+        Home_Screen(vm: vm)
     }
 }
