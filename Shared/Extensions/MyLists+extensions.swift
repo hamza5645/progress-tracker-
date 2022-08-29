@@ -17,7 +17,7 @@ extension MyList {
     }
     
     func save() throws {
-        try coreDataManager.shared.context.save()
+        try CoreDataManager.shared.context.save()
         
     }
     

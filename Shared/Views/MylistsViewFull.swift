@@ -61,8 +61,8 @@ struct MylistsViewFull: View {
             NavigationView {
                 VStack {
                     
-                    List(myLists) { myLists in
-                        Text(myLists.name)
+                    List(myLists) { myList in
+                       MyListCellView(vm: myList)
                     }
 #if os(iOS)
                     Divider()
