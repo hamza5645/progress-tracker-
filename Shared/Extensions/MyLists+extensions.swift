@@ -9,10 +9,11 @@ import Foundation
 import CoreData
 
 
+
 extension MyList {
      static var all: NSFetchRequest<MyList> {
         let request = MyList.fetchRequest()
-        request.sortDescriptors = []
+         request.sortDescriptors = [NSSortDescriptor(keyPath: \MyList.name, ascending: true)]
         return request
     }
     

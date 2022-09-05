@@ -16,7 +16,8 @@ class HomeViewModel: NSObject, ObservableObject {
     @Published var myLists: [MyListViewModel] = []
     
     override init() {
-        self.context = CoreDataManager.shared.context
+        let context = CoreDataManager.shared.context
+        self.context = context
         fetchedResultsController = NSFetchedResultsController(fetchRequest: MyList.all, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         super.init()
         fetchedResultsController.delegate = self
