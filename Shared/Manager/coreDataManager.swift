@@ -18,7 +18,7 @@ class CoreDataManager {
     }
     
     private init() {
-        persistentContainer = NSPersistentContainer(name: "RemindersModel")
+        persistentContainer = NSPersistentContainer(name: "progress tracker model")
         let description = persistentContainer.persistentStoreDescriptions.first
         // This allows a 'non-iCloud' sycning
         // container to keep track of changes
